@@ -253,10 +253,10 @@ header .myAccount ol li:nth-child(1):hover{
 }
 
 .imgSlides  img{
-    width: 100%;
-    object-fit: cover;
-    height: 100vh;
-    transform:translateX(-50%);
+    min-width: 100%;
+    object-fit: contain;
+    transition: .5s;
+    height: auto;
 }
 .imgSlides >.fa-chevron-circle-left{
     position: absolute;
@@ -297,4 +297,5 @@ header .myAccount ol li:nth-child(1):hover{
     height: 15px;
     background: #fff;
     border-radius: 50%;
+    margin: 0 5px;
 }
