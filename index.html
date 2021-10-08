@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.6.0/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick-1.6.0/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>憶旺智慧電商</title>
 </head>
@@ -58,27 +60,25 @@
 
         <div class="menu-btn"></div>
     </header>
-
-<div class="imgSlides">
-    <i class="fas fa-chevron-circle-left"></i>
-    <i class="fas fa-chevron-circle-right"></i>
-   
-    <img src="images/banner.jpg" alt="" class="imgSlidesImg">
-    <img src="images/banner.jpg" alt="" class="imgSlidesImg">
-    <img src="images/banner.jpg" alt="" class="imgSlidesImg">
-    <img src="images/banner.jpg" alt="" class="imgSlidesImg">
-    <img src="images/banner.jpg" alt="" class="imgSlidesImg">
-
-
-        
-   
-
-    <div class="dots"></div>
     
-</div>
+    <ul class="slides">
+        <li><img src="images/banner.jpg" alt=""></li>
+        <li><img src="images/banner.jpg" alt=""></li><li><img src="images/banner.jpg" alt=""></li><li><img src="images/banner.jpg" alt=""></li>
+
+    </ul>
+
 </body>
-
-
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/slick-1.6.0/slick/slick.min.js"></script>
 <script src="script.js"></script>
-<script src="imgslides.js"></script>
+<script>
+$('.slides').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: false
+});
+</script>
 </html>
