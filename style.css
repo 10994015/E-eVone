@@ -9,6 +9,32 @@
     font-family: '微軟正黑體',sans-serif;
 	scroll-behavior: smooth;
 }
+.scrollToTop-btn{
+    z-index: 999;
+    position: fixed;
+    background: var(--main-color);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .scrollToTop-btn:hover{
+      background:#BD1E2C;
+  }
+  .scrollToTop-btn.active{
+    right: 20px;
+    opacity: 1;
+    pointer-events: auto;
+  }
 header{
     width:100%;
     background: var(--main-color);
@@ -54,7 +80,7 @@ header .headerCenter #searchInput{
     outline: none;
     padding: 0 5px;
 }
-header .headerCenter button{
+header .headerCenter .searchBox button{
     background: #fff;
     outline: none;
     width: 50px;
@@ -242,17 +268,251 @@ header .myAccount ol li:hover{
 header .myAccount ol li:nth-child(1):hover{
     color:#fff;
 }
+.menu-btn{
+    position: absolute;
+    background: url('./images/menu.png')no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: none;
+    z-index: 10000;
+}
+.menu-btn.active{
+    z-index: 10000;
+    background:url('./images/close.png')no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: .3s ease;
+
+  }
+.searchBtn{
+    color:#fff;
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+
+.searchBtn .RWDsearchBox{
+    position: absolute;
+    width:250px;
+    height: auto;
+    padding: 20px 15px;
+    background-color: #fff;
+    top: 55px;
+    left: -30px;
+    display: none;
+}
+
+.searchBtn .RWDsearchBox::after{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border: 15px solid #333;
+    border-color: transparent transparent #fff transparent;
+}
+.searchBtn .RWDsearchBox::before{
+    content: "";
+    position: absolute;
+    top: -32px;
+    left: 29px;
+    width: 0;
+    height: 0;
+    border: 16px solid #000;
+    border-color: transparent transparent #fff transparent;
+}
+.searchBtn .RWDsearchBox input{
+    width: 160px;
+    height: 35px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.searchBtn .RWDsearchBox button{
+    width: 30px;
+    height: 35px;
+    font-size: 16px;
+    outline: none;
+    border:none;
+    color:#fff;
+    background: #E66756;
+}
+
 
 .slides{
     width: 100%;
     height: auto;
     position: relative;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .slides li img{
     width:100%;
     height: auto;
+    max-height: 100vh;
     object-fit: contain;
     cursor: grab;
+}
+@media screen and (max-width:1024px){
+    header{
+        padding: 13px 50px;
+    }
+    header.sticky{
+        opacity: 1;
+        padding: 3px 50px;
+    }
+    header .headerNav{
+        display: none;
+        width:100%;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(230, 103, 86, .75);
+        z-index: 1000;
+       
+    }
+    header .headerNav.active{
+        display: flex;
+    }
+    header .headerNav .navLeft,
+    header .headerNav .navRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+    header .myAccount{
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    header .headerNav .navLeft a,
+    header .headerNav .navRight a{
+        margin: 10px 0;
+    }
+    header .myAccount > ol{
+        font-size: 18px;
+    }
+    header .headerCenter{
+        justify-content: space-between;
+        height: 60px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    header .searchBox{
+        display: none;
+    }
+    header .searchBtn{
+        display: block;
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    header  .headerCart{
+        margin-right: 25px;
+    }
+    .searchBtn .RWDsearchBox.active{
+        display: block;
+    }
+
+
+    .slides{
+        margin-top: 50px;
+        max-height: 200px;
+    }
+}
+
+
+
+.newProduct{
+    width: 100%;
+    height: auto;
+    background: rgba(255,255,255,.5) url('./images/bg2.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+.newProduct >.container{
+    opacity: 1;
+}
+.newProduct .newProductItemTop{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.newProduct .newProductItemTop:hover > img,
+.newProduct .newProductItemBottom:hover > img
+{
+    transform: scale(1.1);
+    transition: .8s;
+}
+.newProduct .newProductItemTop img,
+.newProduct .newProductItemBottom >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-filter:brightness(.5);
+}
+.newProduct .newProductItemTop .newProductText,
+.newProduct .newProductItemBottom .newProductText
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#fff;
+}
+.newProduct .newProductItemTop .newProductText h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.newProduct .newProductItemTop .newProductText p{
+    font-size: 24px;
+}
+.newProductItemBottom{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.sloganItem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sloganItem >h1{
+    font-size: 24px;
+    margin: 5px 0;
+
+}
+.sloganItem >p{
+    font-size: 14px;
+    margin: 5px 0;
+    color:#888;
+}
+.sloganItem >i{
+    font-size: 48px;
+    color:#E66756;
+    margin: 5px 0;
 }
