@@ -1,5 +1,4 @@
 :root{
-
 	--main-color:#E66756;
 }
 *{
@@ -8,6 +7,15 @@
     box-sizing: border-box;
     font-family: '微軟正黑體',sans-serif;
 	scroll-behavior: smooth;
+}
+h2{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+.thousands::before{
+    content:'$';
 }
 .scrollToTop-btn{
     z-index: 999;
@@ -341,7 +349,7 @@ header .myAccount ol li:nth-child(1):hover{
     outline: none;
     border:none;
     color:#fff;
-    background: #E66756;
+    background: var(--main-color);
 }
 
 
@@ -492,7 +500,9 @@ header .myAccount ol li:nth-child(1):hover{
     position: relative;
     overflow: hidden;
 }
-
+.newProduct .newProductItemBottom .newProductText h1{
+    font-size: 30px;
+}
 
 .sloganItem{
     width: 100%;
@@ -513,6 +523,70 @@ header .myAccount ol li:nth-child(1):hover{
 }
 .sloganItem >i{
     font-size: 48px;
-    color:#E66756;
+    color:var(--main-color);
     margin: 5px 0;
+}
+
+.hotProduct h1{
+    font-size: 2rem;
+    position: relative;
+    color:var(--main-color);
+    font-weight: 600;
+}
+
+.hotProduct h1::before{
+    content: '';
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	width: 100px;
+	height: 4px;
+	background:var(--main-color);
+	transform: translateX(-50%);
+}
+.hotProduct .hotProductItem{
+    width: 100%;
+    padding: 20px 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color:#000;
+}
+.hotProduct .hotProductItem:hover>img{
+    transform: translateY(-10px);
+    transition: .5s;
+}
+.hotProduct .hotProductItem img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+.hotProduct .hotProductItem h2{
+    color:var(--main-color);
+    font-size: 24px;
+    font-weight: 600;
+    width: 90%;
+    
+
+}
+.hotProduct .hotProductItem span{
+    text-decoration:line-through;
+}
+.hotProduct .hotProductItem b{
+    text-decoration: none;
+    margin-left: 3px;
+    color:#BD1E2C;
+    font-size: 20px;
+}
+.hotProduct .hotProductItem a{
+    width: 120px;
+    height: 40px;
+    background: var(--main-color);
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
 }
