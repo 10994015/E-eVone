@@ -14,6 +14,9 @@ h2{
     white-space: nowrap;
     text-align: center;
 }
+a:hover{
+    text-decoration: none;
+}
 .thousands::before{
     content:'$';
 }
@@ -437,7 +440,6 @@ header .myAccount ol li:nth-child(1):hover{
 
     .slides{
         margin-top: 50px;
-        max-height: 200px;
     }
 }
 
@@ -450,58 +452,46 @@ header .myAccount ol li:nth-child(1):hover{
     background-position: center;
     background-size: cover;
     background-blend-mode: lighten;
+    padding: 50px 0;
+    
 }
-.newProduct >.container{
-    opacity: 1;
+.newProduct h1{
+    color:var(--main-color);
+    font-weight: 600;
+    font-size: 2rem;
 }
-.newProduct .newProductItemTop{
-    width: 100%;
-    height: 350px;
-    position: relative;
-    overflow: hidden;
+.newProduct h1::before{
+    content: '';
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	width: 100px;
+	height: 4px;
+	background:var(--main-color);
+	transform: translateX(-50%);
 }
-.newProduct .newProductItemTop:hover > img,
-.newProduct .newProductItemBottom:hover > img
-{
-    transform: scale(1.1);
-    transition: .8s;
-}
-.newProduct .newProductItemTop img,
-.newProduct .newProductItemBottom >img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    -webkit-filter:brightness(.5);
-}
-.newProduct .newProductItemTop .newProductText,
-.newProduct .newProductItemBottom .newProductText
-{
-    width: 100%;
-    height: 100%;
+.newProduct .newProductItem{
+    width: 80%;
+    background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color:#fff;
+    padding: 15px 0;
+    height: 350px;
+    margin: auto;
+    text-decoration: none;
+    color:#333;
 }
-.newProduct .newProductItemTop .newProductText h1{
-    font-size: 40px;
-    font-weight: 600;
+.newProduct .newProductItem:hover>img{
+    transform: translateY(-3px);
+    transition: .5s;
 }
-.newProduct .newProductItemTop .newProductText p{
-    font-size: 24px;
+.newProduct .newProductItem img{
+    width: 90%;
 }
-.newProductItemBottom{
-    width: 100%;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-}
-.newProduct .newProductItemBottom .newProductText h1{
-    font-size: 30px;
+.newProduct .newProductItem p{
+    padding: 15px;
+    text-align: center;
 }
 
 .sloganItem{
@@ -589,4 +579,39 @@ header .myAccount ol li:nth-child(1):hover{
     text-align: center;
     line-height: 40px;
     font-weight: 600;
+}
+.ec_content .ecItem{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.ec_content .ecItemBottom{
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.ec_content .ecItem img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    -webkit-filter:brightness(.5);
+}
+.ec_content .ecItemBottom img{
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+    -webkit-filter:brightness(.5);
+}
+.ec_content .ecItemText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:0;
+    color:#fff;
 }
