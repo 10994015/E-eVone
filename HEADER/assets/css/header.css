@@ -14,8 +14,13 @@ h2{
     white-space: nowrap;
     text-align: center;
 }
+a{
+    color:#000;
+}
 a:hover{
     text-decoration: none;
+    color:var(--main-color);
+    
 }
 .thousands::before{
     content:'$';
