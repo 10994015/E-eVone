@@ -97,23 +97,23 @@
 
 .sort{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 100px;
 }
 .sort h3{
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 0;
 }
 .sort select{
-    width: 200px;
+    width: 180px;
     height: 35px;
-    margin-left: 15px;
+    margin-left: 10px;
     outline: none;
     border:none;
     border:1px #aaa solid;
     border-radius: 3px;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 .sort select:focus{
     border:2px var(--main-color) solid;
