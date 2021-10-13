@@ -12,10 +12,9 @@ filter.addEventListener("click",()=>{
 })
 barClose.addEventListener("click",()=>{
         leftSideBar.style.left="-70%";
-        
+        leftSideBar.style.opacity=0;
         setTimeout(()=>{
             leftSideBar.style.display="none";
-            leftSideBar.style.opacity=0;
-        },1000)
+        },100)
         
 })
