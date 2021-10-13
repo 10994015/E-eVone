@@ -5,7 +5,7 @@
 
 
 .breadcrumbs{
-    margin-top: 200px;
+    margin-top: 180px;
 }
 .breadcrumb {
     background-color: transparent;
@@ -37,8 +37,8 @@
     font-size: 18px;
     color:var(--main-color);
     border-bottom: 1px #ccc solid;
-    height: 35px;
-    line-height: 35px;
+    height: 40px;
+    line-height: 40px;
 }
 .prod_class-2 li{
     font-weight: 500;
@@ -99,6 +99,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
 .sort h3{
     font-size: 18px;
@@ -126,6 +127,7 @@
     overflow: hidden;
     position: relative;
     color:#000;
+    margin-bottom: 15px;
 }
 .prodItem .buyNow{
     width: 150px;
@@ -189,4 +191,43 @@
     font-size: 16px;
     font-weight: 600;
     color:var(--main-color);
+}
+.pageBox{
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    padding: 0 10px;
+    margin: 25px 0;
+}
+.page{
+	display: flex;
+	list-style: none;
+	align-items: center;
+	margin: 15px 0;
+}
+.page i{
+	margin: 0 15px;
+	cursor: pointer;
+	color:#999;
+}
+.page i:hover{
+	color:#000;
+	transition: .3s;
+}
+.page li{
+	width:40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.page li:hover{
+	background-color: #ddd;
+}
+
+@media screen and (max-width:1024px){
+    .breadcrumbs{
+        margin-top: 100px;
+    }
 }
