@@ -313,52 +313,6 @@ header .myAccount ol li:nth-child(1):hover{
     position: relative;
 }
 
-.searchBtn .RWDsearchBox{
-    position: absolute;
-    width:250px;
-    height: auto;
-    padding: 20px 15px;
-    background-color: #fff;
-    top: 55px;
-    left: -30px;
-    display: none;
-}
-
-.searchBtn .RWDsearchBox::after{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 30px;
-    width: 0;
-    height: 0;
-    border: 15px solid #333;
-    border-color: transparent transparent #fff transparent;
-}
-.searchBtn .RWDsearchBox::before{
-    content: "";
-    position: absolute;
-    top: -32px;
-    left: 29px;
-    width: 0;
-    height: 0;
-    border: 16px solid #000;
-    border-color: transparent transparent #fff transparent;
-}
-.searchBtn .RWDsearchBox input{
-    width: 160px;
-    height: 35px;
-    font-size: 16px;
-    margin-left: 10px;
-}
-.searchBtn .RWDsearchBox button{
-    width: 30px;
-    height: 35px;
-    font-size: 16px;
-    outline: none;
-    border:none;
-    color:#fff;
-    background: var(--main-color);
-}
 
 
 @media screen and (max-width:1024px){
@@ -421,13 +375,78 @@ header .myAccount ol li:nth-child(1):hover{
         font-size: 20px;
         margin-left: 15px;
     }
+    header .searchBtn input{
+        width:300px;
+        height: 30px;
+        font-size: 16px;
+        border:none;
+        outline: none;
+        padding: 0 3px;
+        
+    }
+    header .searchBtn button{
+        width:30px;
+        font-size: 16px;
+        height: 30px;
+        background-color: #fff;
+        color:#E66756;
+        border:none;
+        outline: none;
+        margin-left: 1px;
+    }
     header  .headerCart{
         margin-right: 25px;
     }
-    .searchBtn .RWDsearchBox.active{
-        display: block;
-    }
+    
 
 
     
+}
+@media screen and (max-width:580px){
+    header{
+        padding: 13px 30px;
+    }
+    header.sticky{
+        opacity: 1;
+        padding: 3px 30px;
+    }
+    header .searchBtn input{
+        width:250px;
+        height: 30px;
+        font-size: 16px;
+        border:none;
+        outline: none;
+        padding: 0 3px;
+        
+    }
+}
+@media screen and (max-width:480px){
+    
+    header .searchBtn input{
+        width:150px;
+        height: 30px;
+        font-size: 16px;
+        border:none;
+        outline: none;
+        padding: 0 3px;
+        
+    }
+}
+@media screen and (max-width:400px){
+    header{
+        padding: 13px 20px;
+    }
+    header.sticky{
+        opacity: 1;
+        padding: 3px 20px;
+    }
+    header .searchBtn input{
+        width:150px;
+        height: 30px;
+        font-size: 16px;
+        border:none;
+        outline: none;
+        padding: 0 3px;
+        
+    }
 }
