@@ -286,4 +286,12 @@
     .leftSideBar{
         width: 70%;
     }
+    .col-sm-12{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .col-6{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
 }
