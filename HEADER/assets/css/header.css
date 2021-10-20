@@ -22,6 +22,17 @@ a:hover{
     color:var(--main-color);
     
 }
+main{
+    animation: open .5s;
+}
+@keyframes open{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .thousands::before{
     content:'$';
 }
@@ -220,6 +231,17 @@ header .myAccount{
     display: flex;
     line-height: 30px;
     
+    
+}
+header .myAccount > p{
+    text-decoration: none;
+    color:#fff;
+    font-size: .9em;
+    font-weight: 600;
+    cursor: pointer;
+}
+header .myAccount > p:hover{
+    color:#ddd;
 }
 header .myAccount > ol{
     position: absolute;
@@ -234,6 +256,9 @@ header .myAccount > ol{
     transform: scale(0);
     z-index: 888;
 
+}
+header .myAccount > ol>a{
+    font-weight: 600;
 }
 header .myAccount > ol::after{
     content: "";
@@ -255,18 +280,20 @@ header .myAccount > ol::before{
     border: 16px solid #000;
     border-color: transparent transparent #000 transparent;
 }
-header .myAccount ol li:nth-child(1){
+header .myAccount ol> li:nth-child(1){
     background: #333;
     color:#fff;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor:context-menu ;
+    font-weight: 600;
 }
-header .myAccount ol li:nth-child(1) img{
+header .myAccount ol> li:nth-child(1) img{
     margin-right: 10px;
 }
-header .myAccount ol li{
+header .myAccount ol li,
+header .myAccount ol a{
     height: 45px;
     color:#333;
     text-align: center;
@@ -281,7 +308,7 @@ header .myAccount:hover > ol{
 header .myAccount ol li:hover{
     color:var(--main-color);
 }
-header .myAccount ol li:nth-child(1):hover{
+header .myAccount ol >li:nth-child(1):hover{
     color:#fff;
 }
 .menu-btn{
@@ -354,7 +381,8 @@ header .myAccount ol li:nth-child(1):hover{
         width: auto;
     }
     header .headerNav .navLeft a,
-    header .headerNav .navRight a{
+    header .headerNav .navRight a,
+    header .myAccount >p{
         margin: 10px 0;
     }
     header .myAccount > ol{
