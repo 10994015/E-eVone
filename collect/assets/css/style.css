@@ -39,7 +39,7 @@ main{
 .collect{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .collect .collectItem{
 	width: 230px;
@@ -189,6 +189,59 @@ main{
 	width: 50px;
 	height: 50px;
 }
+
+@media screen and (max-width:1200px){
+	.collect{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: auto;
+	}
+	.collect .collectItem{
+		width: 30%;
+		border: 1px #ddd solid;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(1 1 1 / 15%);
+		overflow: hidden;
+		height: 400px;
+		margin: 5px;
+	}
+}
+@media screen and (max-width:1000px){
+	.collect{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: auto;
+	}
+	.collect .collectItem{
+		width: 48%;
+		border: 1px #ddd solid;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(1 1 1 / 15%);
+		overflow: hidden;
+		height: 400px;
+		margin: 5px;
+	}
+}
+@media screen and (max-width:768px){
+	.collect{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: auto;
+	}
+	.collect .collectItem{
+		width: 48%;
+		border: 1px #ddd solid;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(1 1 1 / 15%);
+		overflow: hidden;
+		height: 400px;
+		margin: 5px;
+	}
+}
+
 @media screen and (max-width: 765px){
 	.member .member-nav{
 	width: 100%;
@@ -197,6 +250,21 @@ main{
 	align-items: center;
 	flex-direction: column;
 	
+}
+.collect{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: auto;
+}
+.collect .collectItem{
+	width: 100%;
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(1 1 1 / 15%);
+	overflow: hidden;
+	height: 400px;
+	margin: 0px;
 }
 	
 }
