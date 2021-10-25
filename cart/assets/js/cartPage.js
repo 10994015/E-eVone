@@ -13,6 +13,21 @@ var giveawayModelBack = document.getElementsByClassName('giveawayModelBack')[0];
 var giveawayClose = document.getElementsByClassName('giveawayClose')[0];
 var question2 = document.querySelector('.giveawayArea .fa-question-circle');
 
+var addCart = document.getElementsByClassName('addCart');
+var addGiv = document.getElementsByClassName('addGiv');
+for(let add=0;add<addCart.length;add++){
+  addCart[add].addEventListener("click",()=>{
+    alert("加入購物車成功!");
+  })
+  
+}
+for(let add=0;add<addGiv.length;add++){
+  addGiv[add].addEventListener("click",()=>{
+    alert("贈品加入成功!");
+  })
+}
+
+
 question1.addEventListener("click",()=>{
   addPurchaseModel.style.display="block";
 })

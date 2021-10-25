@@ -72,7 +72,9 @@
   top: 0;
   left: 0;
   display: none;
+  opacity: 0;
   z-index: 99999999;
+  transition: .3s;
   
 }
 .sub-newsletter .newsletterback{
@@ -101,7 +103,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 15px;
-  background: #1484C4;
+  background: #E66;
   margin-bottom: 30px;
 
 }
@@ -155,7 +157,7 @@
   width: 150px;
   height: 35px;
   color: #fff;
-  background: #1484c4;
+  background: #E66;
   outline: none;
   border: none;
   cursor: pointer;
@@ -166,7 +168,7 @@
   font-weight: 600;
 }
 .sub-newsletter .newsletter .sub-send:hover{
-  background: #1468C4;
+  background: #ce1717;
   transition: .5s;
 }
 

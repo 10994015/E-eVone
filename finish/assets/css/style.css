@@ -41,11 +41,11 @@ main{
 	border-bottom: 2px #ccc solid;
 }
 .finishPage .orderDetails .orderDetailsTitle .td-1{
-	width: 80%;
+	width: 70%;
 	text-align: left;
 }
 .finishPage .orderDetails .orderDetailsTitle .td-2{
-	width: 20%;
+	width: 30%;
 	text-align: right;
 }
 .finishPage .orderDetails .orderDetailsItem{
@@ -61,7 +61,8 @@ main{
 	border-bottom: 1px #ddd solid;
 }
 .finishPage .orderDetails .orderDetailsTotal,
-.finishPage .orderDetails .orderDetailsAdd{
+.finishPage .orderDetails .orderDetailsAdd,
+.finishPage .orderDetails .orderDetailsAddress{
 	list-style: none;
 	padding: 0 15px;
 	width: 100%;
@@ -76,6 +77,9 @@ main{
 }
 .finishPage .orderDetails .orderDetailsTotal .td-2{
 	color:#f00;
+}
+.finishPage .orderDetails .orderDetailsAddress .td-1{
+	width: 40%;
 }
 
 .finishPage .orderInfo{
