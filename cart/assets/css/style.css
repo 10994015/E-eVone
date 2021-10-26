@@ -14,6 +14,9 @@ p{
 h1{
 	font-size: 24px;
 }
+h2{
+	text-align: left;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 	margin-bottom: 0;
 	font-weight: 600;
@@ -720,6 +723,10 @@ main{
 .checkoutPage .buyerInfo h1{
 	font-size: 1.8rem;
 }
+.checkoutPage .buyerInfo h2{
+	margin-bottom: -1px;
+
+}
 .checkoutPage .buyerInfo input[type="text"],
 .checkoutPage .buyerInfo input[type="email"],
 .checkoutPage .buyerInfo select{
@@ -848,6 +855,9 @@ main{
 
 .invoiceInfo .compileInvoices{
 	display: none;
+}
+.invoiceInfo .compileInvoices h2{
+	
 }
 .invoiceInfo .compileInvoices input{
 	width:90%;
