@@ -7,6 +7,8 @@ const menuBtn = document.getElementsByClassName('menu-btn')[0];
 const headerNav = document.getElementsByClassName('headerNav')[0];
 const searchBtn = document.querySelector('.searchBtn > i');
 const RWDsearchBox = document.getElementsByClassName('RWDsearchBox')[0];
+
+
 menuBtn.addEventListener("click",()=>{
     menuBtn.classList.toggle('active');
     headerNav.classList.toggle('active');
