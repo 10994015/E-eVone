@@ -4,12 +4,11 @@
 }
 
 main{
-    padding-top:5em ;
+    padding-top:2em ;
 }
 .member{
 	min-height: 100vh;
 	height: auto;
-	padding-top: 8em;
 }
 .member .member-title{
 	border-bottom: 1px #DDD solid;

@@ -21,9 +21,7 @@ h2{
 	margin-bottom: 0;
 	font-weight: 600;
 }
-.breadcrumb{
-	background: transparent;
-}
+
 .col-sm-12{
 	padding-left: 0;
 	padding-right: 0;
@@ -31,7 +29,7 @@ h2{
 main{
 
 	height: auto;
-	padding:12em 30px 50px 30px ;
+	padding:2em 30px 50px 30px ;
 
 }
 

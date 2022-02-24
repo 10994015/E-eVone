@@ -4,14 +4,13 @@
 }
 
 main{
-    padding-top:5em ;
+    padding-top:2em ;
 }
 .thousands::before{
     content:'$';
 
 }
 .register{
-	padding-top: 8em;
 	padding-bottom: 50px;
 }
 
@@ -20,9 +19,7 @@ main{
     width: 100%;
     min-height: 100vh;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap :7rem;
+    
     padding: 0 2rem;
 }
 .register .container .title{
@@ -37,7 +34,7 @@ main{
 
 .register .register-content{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
 }

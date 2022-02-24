@@ -4,17 +4,17 @@
 }
 
 main{
-    padding-top:5em ;
+    padding-top:2em ;
 }
 .thousands::before{
     content:'$';
 }
 .forgetPassword{
-	min-height: calc(100vh - 122px);
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5px;
+	padding-bottom: 150px;
 }
 .forgetPassword  .forgetContent{
 	width: 100%;

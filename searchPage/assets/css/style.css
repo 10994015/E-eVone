@@ -3,12 +3,8 @@
 	--main-color:#E66756;
 }
 
-
-.breadcrumbs{
-    margin-top: 180px;
-}
-.breadcrumb {
-    background-color: transparent;
+main{
+    padding-top: 2em;
 }
 .searchText h1{
     font-size: 1.5rem;

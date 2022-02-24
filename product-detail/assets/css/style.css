@@ -6,16 +6,9 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-.breadcrumbs{
-    margin-top: 180px;
+main{
+    padding-top: 2em;
 }
-.breadcrumb {
-    background-color: transparent;
-}
-
-
-
 #checkCaption,#checkNorm,#checkDelivery{
     position: fixed;
     top: 0;
