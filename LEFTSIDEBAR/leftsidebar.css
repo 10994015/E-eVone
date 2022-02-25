@@ -79,9 +79,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 }
 .hotprodText h2{
     font-size: 20px;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width:170px;
+  text-align: left;
 }
 .filter{
     display: flex;

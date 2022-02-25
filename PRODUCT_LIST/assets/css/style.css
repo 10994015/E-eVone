@@ -79,14 +79,24 @@ main{
 }
 .prodItem .prodItemText{
     padding: 10px;
+    
 }
 .prodItem .prodItemText h4{
     font-size: 18px;
     font-weight: 600;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  height: 40px;
 }
 .prodItemPrice{
     display: flex;
     align-items: center;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
 }
 .prodItemPrice p{
     text-decoration: line-through;
