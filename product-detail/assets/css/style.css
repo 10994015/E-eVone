@@ -70,9 +70,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width:400px;
 }
 .productDetailSmallPhoto{
     display: flex;
+    width:400px;
+    justify-content: space-between;
    
 }
 #bigImg{
@@ -81,11 +84,11 @@ p {
     object-fit: cover;
 }
 .productDetailSmallPhoto img{
-    width: 135px;
+    width: 125px;
     height: 115px;
     object-fit: cover;
     opacity: .5;
-    margin: 10px;
+    margin: 10px 0;
     cursor: pointer;
 }
 .productDetailSmallPhoto img:hover{
@@ -367,11 +370,11 @@ p {
 	padding: 5px;
 	width: 100%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 .groupProdBox{
-    width:25%;
+    width:23%;
     margin-bottom: 5px;
 }
 .groupProdItem{
@@ -433,12 +436,12 @@ p {
 	padding: 5px;
 	width: 100%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-evenly;
     flex-wrap: wrap;
     margin: auto;
 }
 .addPayBox{
-    width:24%;
+    width:23%;
     margin:0 5px 5px 5px;
 }
 .addpayItem{
@@ -579,7 +582,6 @@ p {
 	position: relative;
 }
 .responsive .responsiveBox{
-	
 	border:1px #ccc solid;
 	margin: 0 5px;
 }
