@@ -1,0 +1,142 @@
+
+.leftSideBar{
+    width: 100%;
+}
+.leftSideBar h1{
+    font-size: 20px;
+    color:#555;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 15px;
+}
+.leftSideBar h1::before{
+    content: '';
+    background: #ccc;
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    bottom: -8px;
+}
+.leftSideBar ul{
+    list-style: none;
+}
+
+.prod_class-1 li{
+    font-weight: 600;
+    font-size: 18px;
+    color:var(--main-color);
+    border-bottom: 1px #ccc solid;
+    height: 40px;
+    line-height: 40px;
+}
+.prod_class-2 li{
+    font-weight: 500;
+    font-size: 16px;
+    color:#000;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.prod_class-2:hover > li{
+    background: var(--main-color);
+    transition: .5s;
+    color:#fff;
+}
+.prod_class-2:hover > .prod_class-3 li{
+    display: block;
+    transition: .5s;
+}
+.prod_class-3 li{
+    font-weight: 500;
+    font-size: 16px;
+    color:#555;
+    display: none;
+}
+.prod_class-3 li::before{
+    content: ' - ';
+}
+.prod_class-3 li:hover{
+    transition: .5s;   
+    font-weight: 600;
+    background: #fff;
+    color:#333;
+}
+.hotprod{
+    margin-top: 15px;
+}
+.hotprod li{
+    display: flex;
+    border-bottom: 1px #ccc solid;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.hotprod li >img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.hotprodText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hotprodText h2{
+    font-size: 20px;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    display: none;
+}
+.barClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    width:50px;
+    height:50px;
+    z-index: 999;
+    
+
+}
+.barClose i{
+    font-size: 24px;
+    
+}
+@media screen and (max-width:768px){
+    .filter{
+        display: flex;
+    }
+    .leftSideBar{
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        top: 0px;
+        left: -70%;
+        background: #fff;
+        z-index: 999;
+        padding: 15px 10px;
+        overflow-y: scroll;
+        display: none;
+        opacity: 0;
+        transition: .5s ease;
+    }
+    .leftSideBar::-webkit-scrollbar{
+        display: none;
+    }
+    .barClose{
+        
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+}
+@media screen and (max-width:500px){
+    .leftSideBar{
+        width: 70%;
+    }
+    .store{
+        padding: 0 50px;
+    }
+}
