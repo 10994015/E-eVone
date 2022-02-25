@@ -386,31 +386,6 @@ main{
 
 
 
-
-.sloganItem{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sloganItem >h1{
-    font-size: 24px;
-    margin: 5px 0;
-
-}
-.sloganItem >p{
-    font-size: 14px;
-    margin: 5px 0;
-    color:#888;
-}
-.sloganItem >i{
-    font-size: 48px;
-    color:var(--main-color);
-    margin: 5px 0;
-}
-
-
 .thousands{
     position: relative;
     margin-left: 10px;
@@ -854,9 +829,7 @@ main{
 .invoiceInfo .compileInvoices{
 	display: none;
 }
-.invoiceInfo .compileInvoices h2{
-	
-}
+
 .invoiceInfo .compileInvoices input{
 	width:90%;
 	height: 40px;

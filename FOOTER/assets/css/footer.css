@@ -1,8 +1,4 @@
-#footer{
-  width: 100%;
-  text-align: center;
-  
-}
+
 .footerTrademark{
   background:#09090B;
   color: #fff;
@@ -176,6 +172,37 @@
 .order-item-footer{
   display: flex;
 }
+
+
+.slogan{
+	width:80%;
+	margin:30px auto;
+}
+.sloganItem{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sloganItem >h1{
+    font-size: 24px;
+    margin: 5px 0;
+
+}
+.sloganItem >p{
+    font-size: 14px;
+    margin: 5px 0;
+    color:#888;
+}
+.sloganItem >i{
+    font-size: 48px;
+    color:var(--main-color);
+    margin: 5px 0;
+}
+
+
 @media screen and (max-width: 767px){
   .order-item-footer{
     display: flex;
