@@ -17,12 +17,11 @@ header.sticky{
     padding: 3px 100px;
 }
 .ovx-scroll{
-    width:100%;
+    width:80%;
     padding: 0;
     margin: auto;
     min-height: 70vh;
     height: auto;
-    padding-top: 1em;
 }
 .scrollToTop-btn{
     z-index: 999;

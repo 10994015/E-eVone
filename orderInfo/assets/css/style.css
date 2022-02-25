@@ -3,12 +3,11 @@
 	--main-color:#E66756;
 }
 
-main{
-    padding-top:2em ;
-}
 .member{
 	min-height: 100vh;
 	height: auto;
+	width:80%;
+	margin:auto;
 }
 .member .member-title{
 	border-bottom: 1px #DDD solid;

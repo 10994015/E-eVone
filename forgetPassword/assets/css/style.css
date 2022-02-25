@@ -3,9 +3,6 @@
 	--main-color:#E66756;
 }
 
-main{
-    padding-top:2em ;
-}
 .thousands::before{
     content:'$';
 }
@@ -14,7 +11,8 @@ main{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 150px;
+	width:80%;
+	margin:auto;
 }
 .forgetPassword  .forgetContent{
 	width: 100%;

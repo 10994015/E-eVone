@@ -2,7 +2,18 @@
 	--main-color:#E66756;
 }
 
-
+.intro, .hotProduct {
+    width:80%;
+    margin:auto;
+    
+}
+ .img-slides, .hotProductContent{
+    max-width:100%;
+}
+.newProductContent{
+    max-width:80%;
+    margin:auto;
+}
 .newProduct{
     width: 100%;
     height: auto;

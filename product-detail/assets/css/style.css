@@ -6,8 +6,9 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
-main{
-    padding-top: 2em;
+.main{
+    width:80%;
+    margin:auto;
 }
 #checkCaption,#checkNorm,#checkDelivery{
     position: fixed;

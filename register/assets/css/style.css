@@ -3,15 +3,14 @@
 	--main-color:#E66756;
 }
 
-main{
-    padding-top:2em ;
-}
+
 .thousands::before{
     content:'$';
 
 }
 .register{
-	padding-bottom: 50px;
+	width:80%;
+	margin:auto;
 }
 
 

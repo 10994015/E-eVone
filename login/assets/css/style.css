@@ -3,13 +3,12 @@
 	--main-color:#E66756;
 }
 
-main{
-    padding-top:2em ;
-}
 .thousands::before{
     content:'$';
 }
 .login{
+	width:80%;
+	margin:auto;
 }
 
 

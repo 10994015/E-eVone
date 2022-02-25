@@ -3,9 +3,7 @@
 	--main-color:#E66756;
 }
 
-main{
-	padding-top: 2em;
-}
+
 .collectNull{
 	display: flex;
 	flex-direction: column;
@@ -129,6 +127,8 @@ main{
 	flex-direction: column;
 }
 .member{
+	width:80%;
+	margin:auto;
 	min-height: 100vh;
 	height: auto;
 }
