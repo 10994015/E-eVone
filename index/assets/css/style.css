@@ -61,6 +61,11 @@
 .newProduct .newProductItem p{
     padding: 15px;
     text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+
 }
 
 .sloganItem{

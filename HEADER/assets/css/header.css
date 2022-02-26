@@ -70,15 +70,20 @@ header .headerCenter .searchBox button{
     background: #fff;
     outline: none;
     width: 50px;
-    height: 34px;
+    height: 35px;
     border:none;
     cursor: pointer;
     color:var(--main-color);
     
 }
+header .headerCenter .searchBox label{
+    display: flex;
+    align-items: center;
+}
 header .searchBox{
     display: flex;
     flex-direction: column;
+    
 }
 header .searchBox .hotWord{
     display: flex;

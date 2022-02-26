@@ -75,11 +75,11 @@ checkDeliveryClose.addEventListener("click",()=>{
 
 if(document.body.clientWidth<=768){
     for(var g=0;g<groupProdBox.length;g++){
-        groupProdBox[g].style.width="33%";
+        groupProdBox[g].style.width="50%";
     }
 }
 if(document.body.clientWidth<=500){
     for(var g=0;g<groupProdBox.length;g++){
-        groupProdBox[g].style.width="50%";
+        groupProdBox[g].style.width="100%";
     }
 }
