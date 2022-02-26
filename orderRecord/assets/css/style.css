@@ -82,23 +82,23 @@
 
 
 .orderRecord table tr td:nth-child(1){
-	width: 100px;
+	min-width: 100px;
 	height: 50px;
 }
 .orderRecord table tr td:nth-child(2){
-	width: 150px;
+	min-width: 150px;
 	height: 50px;
 }
 .orderRecord table tr td:nth-child(3){
-	width: 100px;
+	min-width: 100px;
 	height: 50px;
 }
 .orderRecord table tr td:nth-child(4){
-	width: 250px;
+	min-width: 250px;
 	height: 50px;
 }
 .orderRecord table tr td:nth-child(5){
-	width: 150px;
+	min-width: 150px;
 	height: 50px;
 }
 .orderRecord table tr{

@@ -129,6 +129,32 @@
 	background: #b42e1b;
 	transition: .5s;
 }
+.member .settings .setting-columns .chk{
+	display: flex;
+	flex-wrap: wrap;
+}
+.member .settings .setting-columns .chk label{
+	display: flex;
+	align-items: center;
+	margin: 5px 10px;
+}
+.member .settings .setting-columns .chk label input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+}
+.warningText{
+	color:#f10;
+	font-size: 14px;
+}
+.member .settings .setting-columns .setting-column input[type="submit"].disable{
+	background: #ccc;
+	cursor:default ;
+}
+.member .settings .setting-columns .setting-column input[type="submit"].disable:hover{
+	background: #ccc;
+	cursor:default ;
+	transition: 0s;
+}
 .thousands::before{
     content:'$';
 }

@@ -45,8 +45,10 @@
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(1 1 1 / 15%);
 	overflow: hidden;
-	height: 400px;
+	min-height: 400px;
+	height: auto;
 	margin: 15px;
+	padding-bottom:20px;
 }
 .collect .collectItem img{
 	width: 100%;
